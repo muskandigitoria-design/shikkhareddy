@@ -2,227 +2,267 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝐒𝐡𝐢𝐤𝐡𝐚 𝐑𝐞𝐝𝐝𝐲 [2021] | Cricket Expert</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VIP ACCESS | Shikha Reddy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --primary-green: #00ff41;
-            --dark-bg: #05080a;
-            --glass: rgba(255, 255, 255, 0.08);
             --gold: #ffcc00;
+            --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        body {
-            background-color: var(--dark-bg);
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(0, 255, 65, 0.1) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(0, 255, 65, 0.1) 0%, transparent 40%);
-            color: white;
+        body, html {
+            width: 100%;
+            height: 100%;
+            background-color: #050505;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            overflow: hidden;
+            position: fixed;
+        }
+
+        /* --- BLURRY AURA ANIMATION --- */
+        .background-wrapper {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: -1;
+            filter: blur(80px);
+            opacity: 0.6;
+        }
+
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #b38728;
+            border-radius: 50%;
+            animation: move 20s infinite alternate;
+        }
+
+        .blob-1 { top: -10%; left: -10%; background: #aa771c; }
+        .blob-2 { bottom: -10%; right: -10%; background: #bf953f; animation-duration: 25s; }
+        .blob-3 { top: 40%; left: 30%; width: 200px; height: 200px; background: #fcf6ba; animation-duration: 15s; }
+
+        @keyframes move {
+            from { transform: translate(0, 0) scale(1); }
+            to { transform: translate(100px, 100px) scale(1.2); }
+        }
+
+        .container {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
             align-items: center;
-        }
-
-        /* Logo Section */
-        .logo-container {
-            margin-top: 40px;
-            position: relative;
-        }
-
-        .logo-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid var(--primary-green);
-            object-fit: cover;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
-        }
-
-        .online-badge {
-            position: absolute;
-            bottom: 5px;
-            right: 10px;
-            width: 18px;
-            height: 18px;
-            background: var(--primary-green);
-            border: 3px solid var(--dark-bg);
-            border-radius: 50%;
-        }
-
-        /* Main Content */
-        .wrapper {
-            width: 90%;
-            max-width: 450px;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            padding: 20px;
             text-align: center;
-            padding: 20px;
+            z-index: 10;
         }
 
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 800;
-            margin: 15px 0 5px 0;
-            color: #ffffff;
-        }
-
-        .tagline {
-            color: var(--primary-green);
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 25px;
-            display: block;
-        }
-
-        .info-card {
-            background: var(--glass);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-
-        .status-row {
-            display: flex;
-            justify-content: space-between;
+        .logo-wrapper {
             margin-bottom: 15px;
         }
 
-        .status-item span {
+        .logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            padding: 3px;
+            background: var(--gold-gradient);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: float 4s ease-in-out infinite;
+            margin: 0 auto;
+        }
+
+        .logo img {
+            width: 100%; height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #000;
             display: block;
-            font-size: 0.75rem;
-            color: #888;
         }
 
-        .status-item strong {
-            color: var(--gold);
-            font-size: 1.1rem;
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.5rem, 7vw, 2.5rem);
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
         }
 
-        /* The Button */
-        .join-btn {
-            display: block;
-            background: linear-gradient(135deg, #00ff41 0%, #008f25 100%);
-            color: #000;
-            text-decoration: none;
-            padding: 18px 30px;
-            border-radius: 50px;
-            font-weight: 800;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            box-shadow: 0 15px 30px rgba(0, 255, 65, 0.25);
-            transition: all 0.3s ease;
-            animation: shake 3s infinite;
-        }
-
-        @keyframes shake {
-            0%, 100% { transform: scale(1); }
-            5% { transform: scale(1.05); }
-            10% { transform: scale(1); }
-        }
-
-        .join-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(0, 255, 65, 0.4);
-        }
-
-        /* Footer */
-        footer {
-            margin-top: auto;
-            width: 100%;
-            padding: 25px;
-            text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-text {
+        .team-tag {
             font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 4px;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            font-weight: 600;
+            opacity: 0.8;
         }
 
-        .footer-text a {
-            color: var(--primary-green);
+        .glass-panel {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 35px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .glass-panel p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #efefef;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 15px;
+        }
+
+        .stat-item b { color: var(--gold); font-size: 1.2rem; }
+        .stat-item p { font-size: 0.65rem; text-transform: uppercase; opacity: 0.6; }
+
+        .btn-telegram {
+            width: 100%;
+            max-width: 320px;
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #000;
+            background: var(--gold-gradient);
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            display: block;
+            box-shadow: 0 15px 35px rgba(179, 135, 40, 0.4);
+            animation: zoomPulse 2s infinite ease-in-out;
+        }
+
+        #timer-text {
+            display: block;
+            font-size: 0.8rem;
+            margin-top: 5px;
+            color: #000;
+            opacity: 0.8;
+        }
+
+        @keyframes zoomPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.7rem;
+            opacity: 0.7;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .agency-link {
+            color: var(--gold);
             text-decoration: none;
             font-weight: 600;
-        }
-
-        /* List decoration */
-        .benefit-list {
-            list-style: none;
-            text-align: left;
-            margin: 15px 0;
-            font-size: 0.9rem;
-        }
-
-        .benefit-list li {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-
-        .benefit-list li::before {
-            content: '✓';
-            color: var(--primary-green);
-            margin-right: 10px;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="logo-container">
-        <img src="https://mahakalx.sbs/wp-content/uploads/2026/02/sikkhaaa.jpg" alt="Logo" class="logo-img">
-        <div class="online-badge"></div>
+    <div class="background-wrapper">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
 
-    <div class="wrapper">
-        <h1>𝐒𝐡𝐢𝐤𝐡𝐚 𝐑𝐞𝐝𝐝𝐲 [2021]</h1>
-        <span class="tagline">CRICKET PREDICTION WORLD</span>
-
-        <div class="info-card">
-            <div class="status-row">
-                <div class="status-item">
-                    <span>Accuracy</span>
-                    <strong>98% Guaranteed</strong>
-                </div>
-                <div class="status-item">
-                    <span>Today's Profit</span>
-                    <strong>High</strong>
-                </div>
+    <div class="container">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <img src="https://mahakalx.sbs/wp-content/uploads/2026/02/sikkhaaa.jpg" alt="Logo">
             </div>
-            
-            <ul class="benefit-list">
-                <li>Fixed Match Reports</li>
-                <li>Toss & Match Winner Tips</li>
-                <li>IPL & BBL Special Reports</li>
-                <li>Join & Check Previous Work</li>
-            </ul>
         </div>
 
-        <a href="https://t.me/+PYF1Q5YTNeZmNmM9" class="join-btn">
-            JOIN NOW FOR FREE
+        <h1>𝐒𝐡𝐢𝐤𝐡𝐚 𝐑𝐞𝐝𝐝𝐲 [2021]</h1>
+        <div class="team-tag">Elite Cricket Prediction</div>
+
+        <div class="glass-panel">
+            <p>Join the most accurate cricket prediction channel. Get back-to-back winning reports for all major leagues.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <b>95%</b>
+                    <p>Accuracy</p>
+                </div>
+                <div class="stat-item">
+                    <b>50K+</b>
+                    <p>Members</p>
+                </div>
+                <div class="stat-item">
+                    <b>FREE</b>
+                    <p>Access</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://t.me/+p8cXYf8rg0U5NjNl" class="btn-telegram" id="redirect-btn">
+            JOIN TELEGRAM NOW
+            <span id="timer-text">Redirecting in 3s...</span>
         </a>
 
-        <p style="margin-top: 20px; font-size: 0.75rem; color: #555;">
-            Join over 50,000+ members making daily profit.
-        </p>
+        <div class="footer">
+            <span>✦ 18+ | PLAY RESPONSIBLY ✦</span>
+            <p style="margin-top: 10px;">Ads managed by <br> 
+                <a href="https://telegram.me/+TRlJl628l-FkMWE9" class="agency-link">NEXGROWW AGENCY</a>
+            </p>
+        </div>
     </div>
 
-    <footer>
-        <p class="footer-text">
-            Ads Managed By <br>
-            <a href="https://telegram.me/+TRlJl628l-FkMWE9">Nexgroww Agency</a>
-        </p>
-    </footer>
-<!-- Meta Pixel Code -->
+    <script>
+        let timeLeft = 3;
+        const timerElement = document.getElementById('timer-text');
+        const targetUrl = "https://t.me/+p8cXYf8rg0U5NjNl";
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = targetUrl;
+            } else {
+                timerElement.textContent = `Redirecting in ${timeLeft}s...`;
+            }
+        }, 1000);
+    </script>
+
+   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
