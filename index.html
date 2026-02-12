@@ -247,19 +247,19 @@
     </div>
 
     <script>
-        let timeLeft = 3;
+     //   let timeLeft = 3;
         const timerElement = document.getElementById('timer-text');
-        const targetUrl = "https://t.me/+p8cXYf8rg0U5NjNl";
+    //    const targetUrl = "https://t.me/+p8cXYf8rg0U5NjNl";
 
         const countdown = setInterval(() => {
             timeLeft--;
-            if (timeLeft <= 0) {
-                clearInterval(countdown);
+         //   if (timeLeft <= 0) {
+            //    clearInterval(countdown);
                 window.location.href = targetUrl;
             } else {
-                timerElement.textContent = `Redirecting in ${timeLeft}s...`;
+           //     timerElement.textContent = `Redirecting in ${timeLeft}s...`;
             }
-        }, 1000);
+        //}, 1000);
     </script>
 
    <!-- Meta Pixel Code -->
